@@ -977,6 +977,12 @@ static void output_results(int sig)
                     t = ap_double_ms(stats[(int) (0.5 + done * i / 100.0)].time);
                 fprintf(out, "%d,%.3f\n", i, t);
             }
+            // =e
+            t = ap_double_ms(stats[(int) (0.5 + done * 99.9 / 100.0)].time);
+            fprintf(out, "%f,%.3f\n", 99.9, t);
+            t = ap_double_ms(stats[(int) (0.5 + done * 99.99 / 100.0)].time);
+            fprintf(out, "%f,%.3f\n", 99.99, t);
+            //
             fclose(out);
         }
         if (gnuplot) {
@@ -1172,12 +1178,12 @@ static void start_connect(struct connection * c)
     }
 
     if (windowsize != 0) {
-        rv = apr_socket_opt_set(c->aprsock, APR_SO_SNDBUF, 
+        rv = apr_socket_opt_set(c->aprsock, APR_SO_SNDBUF,
                                 windowsize);
         if (rv != APR_SUCCESS && rv != APR_ENOTIMPL) {
             apr_err("socket send buffer", rv);
         }
-        rv = apr_socket_opt_set(c->aprsock, APR_SO_RCVBUF, 
+        rv = apr_socket_opt_set(c->aprsock, APR_SO_RCVBUF,
                                 windowsize);
         if (rv != APR_SUCCESS && rv != APR_ENOTIMPL) {
             apr_err("socket receive buffer", rv);
@@ -1491,7 +1497,7 @@ static void read_connection(struct connection * c)
                 /* The response may not have a Content-Length header */
                 if (!cl) {
                     c->keepalive = 1;
-                    c->length = 0; 
+                    c->length = 0;
                 }
             }
             c->bread += c->cbx - (s + l - c->cbuff) + r - tocopy;
@@ -1637,7 +1643,7 @@ static void test(void)
     }
 
     if (verbosity >= 2)
-        printf("INFO: %s header == \n---\n%s\n---\n", 
+        printf("INFO: %s header == \n---\n%s\n---\n",
                 (posting == 2) ? "PUT" : "POST", request);
 
     reqlen = strlen(request);
@@ -1681,7 +1687,7 @@ static void test(void)
     start = lasttime = apr_time_now();
     stoptime = tlimit ? (start + apr_time_from_sec(tlimit)) : AB_MAX;
 
-#ifdef SIGINT 
+#ifdef SIGINT
     /* Output the results if the user terminates the run early. */
     apr_signal(SIGINT, output_results);
 #endif
@@ -1800,7 +1806,7 @@ static void test(void)
                 }
         }
     } while (lasttime < stoptime && done < requests);
-    
+
     if (heartbeatres)
         fprintf(stderr, "Finished %d requests\n", done);
     else
