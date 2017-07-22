@@ -1,8 +1,8 @@
-top_srcdir   = /home/scc/httpd-2.2.22
-top_builddir = /home/scc/httpd-2.2.22
-srcdir       = /home/scc/httpd-2.2.22/srclib/pcre
-builddir     = /home/scc/httpd-2.2.22/srclib/pcre
-VPATH        = /home/scc/httpd-2.2.22/srclib/pcre
+top_srcdir   = /home/scc/cfs/benchmark/httpd
+top_builddir = /home/scc/cfs/benchmark/httpd
+srcdir       = /home/scc/cfs/benchmark/httpd/srclib/pcre
+builddir     = /home/scc/cfs/benchmark/httpd/srclib/pcre
+VPATH        = /home/scc/cfs/benchmark/httpd/srclib/pcre
 LTLIBRARY_NAME = libpcre.la
 LTLIBRARY_SOURCES = maketables.c get.c study.c pcre.c
 

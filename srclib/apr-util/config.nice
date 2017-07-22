@@ -2,11 +2,11 @@
 #
 # Created by configure
 
-"/home/scc/httpd-2.2.22/srclib/apr-util/configure" \
+"/home/scc/cfs/benchmark/httpd/srclib/apr-util/configure" \
 "--disable-option-checking" \
 "--enable-static-ab" \
 "--cache-file=/dev/null" \
-"--srcdir=/home/scc/httpd-2.2.22/srclib/apr-util" \
+"--srcdir=/home/scc/cfs/benchmark/httpd/srclib/apr-util" \
 "--with-apr=../apr" \
 "--prefix=/usr/local/apache2" \
 "--exec-prefix=/usr/local/apache2" \

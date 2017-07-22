@@ -446,7 +446,7 @@ Copyright (C) 2009 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/scc/httpd-2.2.22'
+ac_pwd='/home/scc/cfs/benchmark/httpd'
 srcdir='.'
 AWK='gawk'
 test -n "$AWK" || AWK=awk
@@ -647,11 +647,11 @@ S["ap_make_include"]="include"
 S["perlbin"]="/usr/bin/perl"
 S["APU_CONFIG"]="/usr/local/apache2/bin/apu-1-config"
 S["APU_VERSION"]="1.4.1"
-S["APU_INCLUDEDIR"]="/home/scc/httpd-2.2.22/srclib/apr-util/include"
+S["APU_INCLUDEDIR"]="/home/scc/cfs/benchmark/httpd/srclib/apr-util/include"
 S["APU_BINDIR"]="/usr/local/apache2/bin"
 S["APR_CONFIG"]="/usr/local/apache2/bin/apr-1-config"
 S["APR_VERSION"]="1.4.5"
-S["APR_INCLUDEDIR"]="/home/scc/httpd-2.2.22/srclib/apr/include"
+S["APR_INCLUDEDIR"]="/home/scc/cfs/benchmark/httpd/srclib/apr/include"
 S["APR_BINDIR"]="/usr/local/apache2/bin"
 S["DSO_MODULES"]=""
 S["INSTALL_PROG_FLAGS"]=""
@@ -666,7 +666,7 @@ S["SSLPORT"]="443"
 S["PORT"]="80"
 S["MODULE_CLEANDIRS"]=" arch/win32 cache database debug echo experimental ldap proxy ssl test dav/main dav/fs dav/lock"
 S["MODULE_DIRS"]=" aaa filters loggers metadata http generators mappers"
-S["LIBTOOL"]="/home/scc/httpd-2.2.22/srclib/apr/libtool $(LTFLAGS)"
+S["LIBTOOL"]="/home/scc/cfs/benchmark/httpd/srclib/apr/libtool $(LTFLAGS)"
 S["NOTEST_LIBS"]=""
 S["NOTEST_LDFLAGS"]=""
 S["NOTEST_CXXFLAGS"]=""
@@ -690,11 +690,11 @@ S["manualdir"]="${datadir}/manual"
 S["htdocsdir"]="${datadir}/htdocs"
 S["logfiledir"]="${localstatedir}/logs"
 S["cgidir"]="${datadir}/cgi-bin"
-S["abs_srcdir"]="/home/scc/httpd-2.2.22"
+S["abs_srcdir"]="/home/scc/cfs/benchmark/httpd"
 S["EXTRA_INCLUDES"]="-I$(top_builddir)/srclib/pcre -I. -I$(top_srcdir)/os/$(OS_DIR) -I$(top_srcdir)/server/mpm/$(MPM_SUBDIR_NAME) -I$(top_srcdir)/modules/http -I$(top_sr"\
 "cdir)/modules/filters -I$(top_srcdir)/modules/proxy -I$(top_srcdir)/include -I$(top_srcdir)/modules/generators -I$(top_srcdir)/modules/mappers -I$(t"\
-"op_srcdir)/modules/database -I/home/scc/httpd-2.2.22/srclib/apr/include -I/home/scc/httpd-2.2.22/srclib/apr-util/include -I/home/scc/httpd-2.2.22/sr"\
-"clib/apr-util/xml/expat/lib -I$(top_srcdir)/modules/proxy/../generators -I$(top_srcdir)/modules/ssl -I$(top_srcdir)/modules/dav/main"
+"op_srcdir)/modules/database -I/home/scc/cfs/benchmark/httpd/srclib/apr/include -I/home/scc/cfs/benchmark/httpd/srclib/apr-util/include -I$(top_srcdi"\
+"r)/modules/proxy/../generators -I$(top_srcdir)/modules/ssl -I$(top_srcdir)/modules/dav/main"
 S["EXTRA_LIBS"]="-lm "
 S["EXTRA_LDFLAGS"]=" "
 S["EXTRA_CXXFLAGS"]=""
@@ -702,8 +702,8 @@ S["EXTRA_CFLAGS"]=" -g -O2 -pthread"
 S["EXTRA_CPPFLAGS"]=" -D_REENTRANT -D_GNU_SOURCE"
 S["AP_CLEAN_SRCLIB_DIRS"]="apr-util  apr pcre"
 S["AP_BUILD_SRCLIB_DIRS"]="apr  apr-util pcre"
-S["AP_LIBS"]="/home/scc/httpd-2.2.22/srclib/pcre/libpcre.la  /home/scc/httpd-2.2.22/srclib/apr-util/libaprutil-1.la     /home/scc/httpd-2.2.22/srclib/apr-util/xml"\
-"/expat/libexpat.la  /home/scc/httpd-2.2.22/srclib/apr/libapr-1.la -lrt -lcrypt  -lpthread -ldl"
+S["AP_LIBS"]="/home/scc/cfs/benchmark/httpd/srclib/pcre/libpcre.la  /home/scc/cfs/benchmark/httpd/srclib/apr-util/libaprutil-1.la     -lexpat  /home/scc/cfs/bench"\
+"mark/httpd/srclib/apr/libapr-1.la -luuid -lrt -lcrypt  -lpthread -ldl"
 S["shared_build"]=""
 S["POST_SHARED_CMDS"]="echo \"\""
 S["PRE_SHARED_CMDS"]="echo \"\""
@@ -824,12 +824,12 @@ S["EGREP"]="/bin/grep -E"
 S["GREP"]="/bin/grep"
 S["INSTALL"]="$(LIBTOOL) --mode=install $(abs_srcdir)/build/install.sh -c"
 S["MKINSTALLDIRS"]="$(abs_srcdir)/build/mkdir.sh"
-S["LYNX_PATH"]="lynx"
+S["LYNX_PATH"]="elinks"
 S["RANLIB"]="ranlib"
 S["LN_S"]="ln -s"
 S["AWK"]="gawk"
 S["RSYNC"]="/usr/bin/rsync"
-S["PKGCONFIG"]=""
+S["PKGCONFIG"]="/usr/bin/pkg-config"
 S["RM"]="/bin/rm"
 S["LTCFLAGS"]="-prefer-non-pic -static"
 S["SHLTCFLAGS"]="-prefer-pic"

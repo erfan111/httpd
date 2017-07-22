@@ -1,8 +1,8 @@
-top_srcdir   = /home/scc/httpd-2.2.22
-top_builddir = /home/scc/httpd-2.2.22
-srcdir       = /home/scc/httpd-2.2.22/server/mpm
-builddir     = /home/scc/httpd-2.2.22/server/mpm
-VPATH        = /home/scc/httpd-2.2.22/server/mpm
+top_srcdir   = /home/scc/cfs/benchmark/httpd
+top_builddir = /home/scc/cfs/benchmark/httpd
+srcdir       = /home/scc/cfs/benchmark/httpd/server/mpm
+builddir     = /home/scc/cfs/benchmark/httpd/server/mpm
+VPATH        = /home/scc/cfs/benchmark/httpd/server/mpm
 
 SUBDIRS = $(MPM_SUBDIR_NAME)
 

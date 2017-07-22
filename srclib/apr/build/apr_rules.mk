@@ -24,9 +24,9 @@
 #
 # Configuration variables
 #
-apr_builddir=/home/scc/httpd-2.2.22/srclib/apr
-apr_builders=/home/scc/httpd-2.2.22/srclib/apr/build
-top_builddir=/home/scc/httpd-2.2.22/srclib/apr
+apr_builddir=/home/scc/cfs/benchmark/httpd/srclib/apr
+apr_builders=/home/scc/cfs/benchmark/httpd/srclib/apr/build
+top_builddir=/home/scc/cfs/benchmark/httpd/srclib/apr
 
 # Some layouts require knowing what version we are at.
 APR_MAJOR_VERSION=1
@@ -53,7 +53,7 @@ DEFS=-DHAVE_CONFIG_H
 EXTRA_CFLAGS=-g -O2 -pthread
 EXTRA_CPPFLAGS=-D_REENTRANT -D_GNU_SOURCE
 EXTRA_LDFLAGS=
-EXTRA_LIBS=-lrt -lcrypt  -lpthread -ldl
+EXTRA_LIBS=-luuid -lrt -lcrypt  -lpthread -ldl
 EXTRA_INCLUDES=
 
 # NOTEST_* are flags and libraries that can be added by the user without

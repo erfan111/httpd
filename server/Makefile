@@ -1,8 +1,8 @@
-top_srcdir   = /home/scc/httpd-2.2.22
-top_builddir = /home/scc/httpd-2.2.22
-srcdir       = /home/scc/httpd-2.2.22/server
-builddir     = /home/scc/httpd-2.2.22/server
-VPATH        = /home/scc/httpd-2.2.22/server
+top_srcdir   = /home/scc/cfs/benchmark/httpd
+top_builddir = /home/scc/cfs/benchmark/httpd
+srcdir       = /home/scc/cfs/benchmark/httpd/server
+builddir     = /home/scc/cfs/benchmark/httpd/server
+VPATH        = /home/scc/cfs/benchmark/httpd/server
 
 CLEAN_TARGETS = gen_test_char test_char.h \
 	ApacheCoreOS2.def httpd.exp export_files \

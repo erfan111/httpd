@@ -33,7 +33,7 @@
 /* #undef HAVE_DECL_EVP_PKEY_CTX_NEW */
 
 /* Define if expat.h is available */
-/* #undef HAVE_EXPAT_H */
+#define HAVE_EXPAT_H 1
 
 /* Define to 1 if you have the <freetds/sybdb.h> header file. */
 /* #undef HAVE_FREETDS_SYBDB_H */

@@ -1,8 +1,8 @@
 
 srcdir=.
 
-top_srcdir=/home/scc/httpd-2.2.22/srclib/apr
-top_blddir=/home/scc/httpd-2.2.22/srclib/apr
+top_srcdir=/home/scc/cfs/benchmark/httpd/srclib/apr
+top_blddir=/home/scc/cfs/benchmark/httpd/srclib/apr
 
 #
 # APR (Apache Portable Runtime) library Makefile.
@@ -41,8 +41,8 @@ TARGETS = $(TARGET_LIB) apr.exp apr-config.out build/apr_rules.out
 LT_VERSION = -version-info 4:5:4
 
 # bring in rules.mk for standard functionality
-include /home/scc/httpd-2.2.22/srclib/apr/build/apr_rules.mk
-include /home/scc/httpd-2.2.22/srclib/apr/build-outputs.mk
+include /home/scc/cfs/benchmark/httpd/srclib/apr/build/apr_rules.mk
+include /home/scc/cfs/benchmark/httpd/srclib/apr/build-outputs.mk
 
 CLEAN_TARGETS = apr-config.out apr.exp exports.c export_vars.c .make.dirs \
 	build/apr_rules.out

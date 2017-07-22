@@ -1,8 +1,8 @@
-top_srcdir   = /home/scc/httpd-2.2.22
-top_builddir = /home/scc/httpd-2.2.22
-srcdir       = /home/scc/httpd-2.2.22/modules
-builddir     = /home/scc/httpd-2.2.22/modules
-VPATH        = /home/scc/httpd-2.2.22/modules
+top_srcdir   = /home/scc/cfs/benchmark/httpd
+top_builddir = /home/scc/cfs/benchmark/httpd
+srcdir       = /home/scc/cfs/benchmark/httpd/modules
+builddir     = /home/scc/cfs/benchmark/httpd/modules
+VPATH        = /home/scc/cfs/benchmark/httpd/modules
 
 SUBDIRS = $(MODULE_DIRS)
 CLEAN_SUBDIRS = $(MODULE_CLEANDIRS)

@@ -1,8 +1,8 @@
-top_srcdir   = /home/scc/httpd-2.2.22
-top_builddir = /home/scc/httpd-2.2.22
-srcdir       = /home/scc/httpd-2.2.22/modules/mappers
-builddir     = /home/scc/httpd-2.2.22/modules/mappers
-VPATH        = /home/scc/httpd-2.2.22/modules/mappers
+top_srcdir   = /home/scc/cfs/benchmark/httpd
+top_builddir = /home/scc/cfs/benchmark/httpd
+srcdir       = /home/scc/cfs/benchmark/httpd/modules/mappers
+builddir     = /home/scc/cfs/benchmark/httpd/modules/mappers
+VPATH        = /home/scc/cfs/benchmark/httpd/modules/mappers
 
 include $(top_srcdir)/build/special.mk
 

@@ -353,7 +353,7 @@ apr_size_t reqlen;
 char buffer[8192];
 
 /* interesting percentiles */
-float percs[] = {50, 66, 75, 80, 90, 95, 98, 99, 99.9, 99.99, 100};
+float percs[] = {50, 66, 75, 80, 90, 95, 98, 99, 99.1, 99.2, 99.3, 99.4, 99.5, 99.6, 99.7, 99.8, 99.9, 99.95, 99.99, 100};
 
 struct connection *con;     /* connection array */
 struct data *stats;         /* data for each request */
@@ -978,10 +978,15 @@ static void output_results(int sig)
                 fprintf(out, "%d,%.3f\n", i, t);
             }
             // =e
-            t = ap_double_ms(stats[(int) (0.5 + done * 99.9 / 100.0)].time);
-            fprintf(out, "%f,%.3f\n", 99.9, t);
-            t = ap_double_ms(stats[(int) (0.5 + done * 99.99 / 100.0)].time);
-            fprintf(out, "%f,%.3f\n", 99.99, t);
+	    double t;
+	    for(i=8; i < sizeof(percs)/ sizeof(int); i++) {	        
+ 		t = ap_double_ms(stats[(int) (0.5 + done * percs[i] / 100.0)].time);
+                fprintf(out, "%f,%.3f\n", percs[i], t);
+    	    }
+//            t = ap_double_ms(stats[(int) (0.5 + done * 99.9 / 100.0)].time);
+  //          fprintf(out, "%f,%.3f\n", 99.9, t);
+    //        t = ap_double_ms(stats[(int) (0.5 + done * 99.99 / 100.0)].time);
+      //      fprintf(out, "%f,%.3f\n", 99.99, t);
             //
             fclose(out);
         }

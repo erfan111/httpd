@@ -1,8 +1,8 @@
-top_srcdir   = /home/scc/httpd-2.2.22
-top_builddir = /home/scc/httpd-2.2.22
-srcdir       = /home/scc/httpd-2.2.22/test
-builddir     = /home/scc/httpd-2.2.22/test
-VPATH        = /home/scc/httpd-2.2.22/test
+top_srcdir   = /home/scc/cfs/benchmark/httpd
+top_builddir = /home/scc/cfs/benchmark/httpd
+srcdir       = /home/scc/cfs/benchmark/httpd/test
+builddir     = /home/scc/cfs/benchmark/httpd/test
+VPATH        = /home/scc/cfs/benchmark/httpd/test
 
 # no targets: we don't want to build anything by default. if you want the
 # test programs, then "make test"

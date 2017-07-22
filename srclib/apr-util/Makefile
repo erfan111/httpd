@@ -10,13 +10,13 @@ APRUTIL_DOTTED_VERSION=1.4.1
 srcdir = .
 
 
-INCLUDES = -I/home/scc/httpd-2.2.22/srclib/apr-util/include -I/home/scc/httpd-2.2.22/srclib/apr-util/include/private  -I/home/scc/httpd-2.2.22/srclib/apr/include  -I/home/scc/httpd-2.2.22/srclib/apr-util/xml/expat/lib
+INCLUDES = -I/home/scc/cfs/benchmark/httpd/srclib/apr-util/include -I/home/scc/cfs/benchmark/httpd/srclib/apr-util/include/private  -I/home/scc/cfs/benchmark/httpd/srclib/apr/include  
 APRUTIL_LDFLAGS = 
-APRUTIL_LIBS = /home/scc/httpd-2.2.22/srclib/apr-util/xml/expat/libexpat.la /home/scc/httpd-2.2.22/srclib/apr/libapr-1.la -lrt -lcrypt -lpthread -ldl
+APRUTIL_LIBS = -lexpat /home/scc/cfs/benchmark/httpd/srclib/apr/libapr-1.la -luuid -lrt -lcrypt -lpthread -ldl
 
 TARGET_LIB = libaprutil-${APRUTIL_MAJOR_VERSION}.la
-INSTALL_SUBDIRS =  xml/expat
-EXTRA_SOURCE_DIRS =  xml/expat
+INSTALL_SUBDIRS =  
+EXTRA_SOURCE_DIRS =  
 APRUTIL_PCFILE = apr-util-$(APRUTIL_MAJOR_VERSION).pc
 APU_CONFIG = apu-$(APRUTIL_MAJOR_VERSION)-config
 INSTALL = /usr/bin/install -c
@@ -47,10 +47,10 @@ LDADD_crypto_nss =
 TARGETS = $(TARGET_LIB) aprutil.exp apu-config.out $(APU_MODULES)
 
 # bring in rules.mk for standard functionality
-include /home/scc/httpd-2.2.22/srclib/apr-util/build/rules.mk
-include /home/scc/httpd-2.2.22/srclib/apr-util/build-outputs.mk
+include /home/scc/cfs/benchmark/httpd/srclib/apr-util/build/rules.mk
+include /home/scc/cfs/benchmark/httpd/srclib/apr-util/build-outputs.mk
 
-CLEAN_SUBDIRS = test  xml/expat
+CLEAN_SUBDIRS = test  
 
 CLEAN_TARGETS = exports.c export_vars.c aprutil.exp .make.dirs apu-config.out
 DISTCLEAN_TARGETS = config.cache config.log config.status libtool \
@@ -68,8 +68,8 @@ exec_prefix=/usr/local/apache2
 bindir=${prefix}/bin
 libdir=${prefix}/lib
 includedir=/usr/local/apache2/include
-top_srcdir=/home/scc/httpd-2.2.22/srclib/apr-util
-top_blddir=/home/scc/httpd-2.2.22/srclib/apr-util
+top_srcdir=/home/scc/cfs/benchmark/httpd/srclib/apr-util
+top_blddir=/home/scc/cfs/benchmark/httpd/srclib/apr-util
 
 # Create apu-config script suitable for the install tree
 apu-config.out: $(APU_CONFIG)

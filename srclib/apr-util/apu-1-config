@@ -27,16 +27,16 @@ bindir="${prefix}/bin"
 libdir="${prefix}/lib"
 includedir="/usr/local/apache2/include"
 
-LIBS="/home/scc/httpd-2.2.22/srclib/apr-util/xml/expat/libexpat.la"
-INCLUDES="-I/home/scc/httpd-2.2.22/srclib/apr-util/xml/expat/lib"
+LIBS="-lexpat"
+INCLUDES=""
 LDFLAGS=""
 LDAP_LIBS=""
 DBM_LIBS="  "
 
 APRUTIL_LIBNAME="aprutil-${APRUTIL_MAJOR_VERSION}"
 
-APU_SOURCE_DIR="/home/scc/httpd-2.2.22/srclib/apr-util"
-APU_BUILD_DIR="/home/scc/httpd-2.2.22/srclib/apr-util"
+APU_SOURCE_DIR="/home/scc/cfs/benchmark/httpd/srclib/apr-util"
+APU_BUILD_DIR="/home/scc/cfs/benchmark/httpd/srclib/apr-util"
 APR_XML_EXPAT_OLD="@APR_XML_EXPAT_OLD@"
 APU_DB_VERSION="0"
 

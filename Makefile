@@ -1,8 +1,8 @@
-top_srcdir   = /home/scc/httpd-2.2.22
-top_builddir = /home/scc/httpd-2.2.22
-srcdir       = /home/scc/httpd-2.2.22
-builddir     = /home/scc/httpd-2.2.22
-VPATH        = /home/scc/httpd-2.2.22
+top_srcdir   = /home/scc/cfs/benchmark/httpd
+top_builddir = /home/scc/cfs/benchmark/httpd
+srcdir       = /home/scc/cfs/benchmark/httpd
+builddir     = /home/scc/cfs/benchmark/httpd
+VPATH        = /home/scc/cfs/benchmark/httpd
 
 SUBDIRS = srclib os server modules support
 CLEAN_SUBDIRS = test

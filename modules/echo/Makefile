@@ -1,8 +1,8 @@
-top_srcdir   = /home/scc/httpd-2.2.22
-top_builddir = /home/scc/httpd-2.2.22
-srcdir       = /home/scc/httpd-2.2.22/modules/echo
-builddir     = /home/scc/httpd-2.2.22/modules/echo
-VPATH        = /home/scc/httpd-2.2.22/modules/echo
+top_srcdir   = /home/scc/cfs/benchmark/httpd
+top_builddir = /home/scc/cfs/benchmark/httpd
+srcdir       = /home/scc/cfs/benchmark/httpd/modules/echo
+builddir     = /home/scc/cfs/benchmark/httpd/modules/echo
+VPATH        = /home/scc/cfs/benchmark/httpd/modules/echo
 
 include $(top_srcdir)/build/special.mk
 

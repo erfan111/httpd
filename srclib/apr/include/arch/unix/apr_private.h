@@ -678,13 +678,13 @@
 /* #undef HAVE_UUID_CREATE */
 
 /* Define to 1 if you have the `uuid_generate' function. */
-/* #undef HAVE_UUID_GENERATE */
+#define HAVE_UUID_GENERATE 1
 
 /* Define to 1 if you have the <uuid.h> header file. */
 /* #undef HAVE_UUID_H */
 
 /* Define to 1 if you have the <uuid/uuid.h> header file. */
-/* #undef HAVE_UUID_UUID_H */
+#define HAVE_UUID_UUID_H 1
 
 /* Define if C compiler supports VLA */
 #define HAVE_VLA 1

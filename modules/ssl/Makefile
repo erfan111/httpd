@@ -1,8 +1,8 @@
-top_srcdir   = /home/scc/httpd-2.2.22
-top_builddir = /home/scc/httpd-2.2.22
-srcdir       = /home/scc/httpd-2.2.22/modules/ssl
-builddir     = /home/scc/httpd-2.2.22/modules/ssl
-VPATH        = /home/scc/httpd-2.2.22/modules/ssl
+top_srcdir   = /home/scc/cfs/benchmark/httpd
+top_builddir = /home/scc/cfs/benchmark/httpd
+srcdir       = /home/scc/cfs/benchmark/httpd/modules/ssl
+builddir     = /home/scc/cfs/benchmark/httpd/modules/ssl
+VPATH        = /home/scc/cfs/benchmark/httpd/modules/ssl
 # Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with
 # this work for additional information regarding copyright ownership.

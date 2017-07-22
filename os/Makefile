@@ -1,8 +1,8 @@
-top_srcdir   = /home/scc/httpd-2.2.22
-top_builddir = /home/scc/httpd-2.2.22
-srcdir       = /home/scc/httpd-2.2.22/os
-builddir     = /home/scc/httpd-2.2.22/os
-VPATH        = /home/scc/httpd-2.2.22/os
+top_srcdir   = /home/scc/cfs/benchmark/httpd
+top_builddir = /home/scc/cfs/benchmark/httpd
+srcdir       = /home/scc/cfs/benchmark/httpd/os
+builddir     = /home/scc/cfs/benchmark/httpd/os
+VPATH        = /home/scc/cfs/benchmark/httpd/os
 
 SUBDIRS = $(OS_DIR)
 
